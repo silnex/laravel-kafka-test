@@ -41,3 +41,24 @@ php artisan kafka:consume
 ```bash
 php artisan kafka:publish
 ```
+
+# Output
+
+> consume
+
+```
+Junges\Kafka\Message\ConsumedMessage^ {#685 // routes/console.php:23
+  #topicName: "laravel-kafka-topic"
+  #partition: 0
+  #headers: array:1 [
+    "header-key" => "header-value"
+  ]
+  #body: array:1 [
+    "key" => "value"
+  ]
+  #key: "kafka key here"
+  #offset: 11
+  #timestamp: 1679414003907
+}
+```
+
